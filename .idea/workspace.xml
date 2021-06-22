@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3fc5354a-7931-4cca-a8a5-9fe523de6d9a" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1oNKVuRTnBBNqOuWcFChKvNICqn" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-03/src/main/resources/log4j.properties" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15390626" />
+    <property name="project.structure.side.proportion" value="0.25427872" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2835821" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-06" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-06\src\main\resources" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-09-test\src\main\resources" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-09-test\src\main\java\com\q" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-08\src\main\java\com\q" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-06\src\main\resources\com\q\dao" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-03\src\main\java\com\q\dao" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-03\src\main\resources" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-03\src\main\java\com\q\mapper" />
+      <recent name="D:\大三\大三下学期\大三下学期Java EE框架技术\mybatis学习\mybatis-06\src\main\java\com\q\dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.q.dao" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.q.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.q.utils" />
+      <recent name="com.q.pojo" />
+      <recent name="com.q.utlis" />
+      <recent name="com.q.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.test.test1">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMapper1Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-06" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.q.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.q.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.q.dao.StudentMapper1Test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMapper1Test.testBatchAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-06" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.q.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.q.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.q.dao.StudentMapper1Test" />
+      <option name="METHOD_NAME" value="testBatchAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMapper1Test.testBatchDeletion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-06" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.q.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.q.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.q.dao.StudentMapper1Test" />
+      <option name="METHOD_NAME" value="testBatchDeletion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quan.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quan.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.quan.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.test1" />
+        <item itemvalue="JUnit.test.test02" />
+        <item itemvalue="JUnit.StudentMapper1Test.testBatchDeletion" />
+        <item itemvalue="JUnit.StudentMapper1Test.test1" />
+        <item itemvalue="JUnit.StudentMapper1Test.testBatchAdd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3fc5354a-7931-4cca-a8a5-9fe523de6d9a" name="默认的" comment="" />
+      <created>1613121638123</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613121638123</updated>
+      <workItem from="1613121639473" duration="17484000" />
+      <workItem from="1613232010499" duration="3402000" />
+      <workItem from="1613315092396" duration="4037000" />
+      <workItem from="1613355025595" duration="14454000" />
+      <workItem from="1613548379821" duration="12556000" />
+      <workItem from="1613618868918" duration="25739000" />
+      <workItem from="1613802552357" duration="7376000" />
+      <workItem from="1613811465474" duration="12044000" />
+      <workItem from="1613824449079" duration="18664000" />
+      <workItem from="1613916906002" duration="9121000" />
+      <workItem from="1613959391133" duration="1913000" />
+      <workItem from="1615435106576" duration="5102000" />
+      <workItem from="1615629032014" duration="25932000" />
+      <workItem from="1616288050304" duration="5541000" />
+      <workItem from="1616295009479" duration="4659000" />
+      <workItem from="1616649787338" duration="249000" />
+      <workItem from="1616673648202" duration="1085000" />
+      <workItem from="1616674814346" duration="5267000" />
+      <workItem from="1616683499971" duration="595000" />
+      <workItem from="1616733290807" duration="60000" />
+      <workItem from="1616773183907" duration="55000" />
+      <workItem from="1616822891057" duration="3415000" />
+      <workItem from="1617092606310" duration="12666000" />
+      <workItem from="1617204900443" duration="31000" />
+      <workItem from="1617293036620" duration="779000" />
+      <workItem from="1617518696462" duration="1994000" />
+      <workItem from="1617532716462" duration="1970000" />
+      <workItem from="1617696800381" duration="7291000" />
+      <workItem from="1617712267330" duration="24725000" />
+      <workItem from="1617888735247" duration="38000" />
+      <workItem from="1617897921439" duration="1654000" />
+      <workItem from="1618211145455" duration="2087000" />
+      <workItem from="1618299543802" duration="3867000" />
+      <workItem from="1618322006232" duration="32000" />
+      <workItem from="1618373414440" duration="1769000" />
+      <workItem from="1619145641306" duration="342000" />
+      <workItem from="1620623947760" duration="3876000" />
+      <workItem from="1620662852888" duration="53000" />
+      <workItem from="1621214705745" duration="609000" />
+      <workItem from="1621398008980" duration="704000" />
+      <workItem from="1621786520922" duration="847000" />
+      <workItem from="1621867082543" duration="7403000" />
+      <workItem from="1623428393137" duration="438000" />
+      <workItem from="1624089154471" duration="1264000" />
+      <workItem from="1624201379033" duration="22336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException" package="com.sun.org.apache.xerces.internal.impl.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

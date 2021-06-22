@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        namespace 绑定对应的Dao /Mapper接口     这里就是开启绑定我们的接口，具体去实现那个接口里面的接口，就是用这个命名空间去找到的-->
+<mapper namespace="com.q.dao.UserMapper">
+
+    <!--    插入   parameterType 这个是传进来的参数类型  如果是int类型的可以进行省略-->
+    <insert id="addUser" parameterType="user">
+        insert into mybatis.user(id, name, pwd)
+        values (#{id}, #{name}, #{pwd});
+    </insert>
+
+    <!-- 更新-->
+    <update id="updateUser" parameterType="user">
+        update mybatis.user
+        set name=#{name},
+            pwd=#{pwd}
+        where id = #{id};
+    </update>
+
+    <!--删除-->
+    <delete id="deleteUser" parameterType="int">
+        delete
+        from mybatis.user
+        where id = #{id}
+    </delete>
+
+    <!-- 查询所有  resultType 这个是参数传出去的类型-->
+    <select id="getUserList" resultType="com.q.pojo.User">
+        select *
+        from mybatis.user
+    </select>
+
+    <!--根据id查询-->
+    <select id="getUserById" resultType="User">
+        select *
+        from mybatis.user
+        where id = #{id}
+    </select>
+
+
+    <!--    结果集映射-->
+    <!--    这里的id为sql语句中的resultMap的值  column 柱子 就是数据库里面的字段 -->
+    <resultMap id="userMap" type="UserTest">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pwd" property="password"/>
+
+    </resultMap>
+
+    <select id="userById" resultMap="userMap">
+        select *
+        from mybatis.user
+        where id = #{id}
+    </select>
+
+
+</mapper>

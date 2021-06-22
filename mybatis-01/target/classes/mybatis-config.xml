@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--第一步：先弄配置文件   配置属性里面还有很多子属性-->
+<!--全局核心配置文件 也就是连接数据库的配置文件，到后期，我会优化到一个信息配置文件里面-->
+
+<configuration>
+    <!--    环境配置-->
+    <environments default="development">
+        <environment id="development">
+            <!--            事务管理器-->
+            <transactionManager type="JDBC"/>
+            <!--            数据源-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSl=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="abcde"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--注册 定义sql映射语句-->
+    <!--    <mappers>-->
+    <!--        <mapper resource="com/quan/dao/UserMapper.xml"/>-->
+    <!--    </mappers>-->
+
+    <!--这是包扫描的方式去找mapper    -->
+    <mappers>
+        <package name="com.quan.dao"/>
+    </mappers>
+</configuration>

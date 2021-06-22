@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        namespace 绑定对应的Dao /Mapper接口 -->
+<mapper namespace="com.q.dao.UserMapper">
+    <!--根据id查询-->
+    <select id="getUserById" resultType="User">
+        select *
+        from mybatis.user
+        where id = #{id}
+    </select>
+
+    <!--    分页查询-->
+    <select id="getUserByLimit" parameterType="map" resultType="User">
+        select *
+        from mybatis.user
+        limit #{startIndex},#{pageSize}
+    </select>
+
+    <!--    分页查询2-->
+    <select id="getUserByRowBounds" resultType="User">
+        select *
+        from mybatis.user
+    </select>
+
+</mapper>

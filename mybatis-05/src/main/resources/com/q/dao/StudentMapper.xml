@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--全局核心配置文件 第一步配置核心文件-->
+<mapper namespace="com.q.dao.StudentMapper">
+
+    <!--
+    思路：
+    1.查询所有的学生信息
+    2.根据查询出来的学生的tid，寻找对应的老师
+
+    这里是按照结果嵌套处理
+    -->
+    <!--    查询学生的id 名字 老师的名字-->
+    <select id="getStudent2" resultMap="StudentTeacher2">
+        select *
+        from student s,
+             teacher t
+        where s.tid = t.id
+    </select>
+
+    <!--    结果集映射-->
+    <resultMap id="StudentTeacher2" type="Student">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+
+        <association property="teacher" javaType="Teacher">
+            <result column="name" property="name"/>
+        </association>
+    </resultMap>
+
+    <!--============================================================-->
+
+    <!--
+    思路：
+    1.查询所有的学生信息
+    2.根据查询出来的学生的tid，寻找对应的老师，也就是子查询
+
+    这里是按照查询嵌套处理
+    -->
+    <select id="getStudent" resultMap="StudentTeacher">
+        select id, name, tid, age
+        from mybatis.student
+    </select>
+
+    <!--结果集映射   将结果映射到student的实体类的中，这个实体类中有属性teacher-->
+    <resultMap id="StudentTeacher" type="Student">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result property="tid" column="tid"/>
+        <!--        复杂的属性，我们要单独进行处理 ，这里是返回的是一个对象-->
+        <association property="teacher" column="tid" javaType="Teacher" select="getTeacher"/>
+    </resultMap>
+
+    <select id="getTeacher" resultType="Teacher">
+        select name
+        from mybatis.teacher
+        where id = #{tid}
+    </select>
+
+
+    <!--================================================================-->
+    <select id="getStudent1" resultType="com.q.pojo.Student">
+        select *
+        from mybatis.student
+        <where>
+            <if test="age &lt; 20">
+                name="tom"
+            </if>
+            <if test="age &gt;= 20 and age &lt;= 30">
+                name="jim"
+            </if>
+            <if test="age &gt; 30">
+                name="jack"
+            </if>
+        </where>
+    </select>
+
+</mapper>

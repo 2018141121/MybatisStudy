@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--全局核心配置文件 第一步配置核心文件-->
+<configuration>
+
+    <!--引入外部配置文件-->
+    <properties resource="db.properties"/>
+
+    <settings>
+        <!--配置日志的实现-->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!--给实体类起类型别名-->
+    <typeAliases>
+        <!--                <typeAlias type="com.q.pojo.User" alias="User"/>-->
+        <!-- 使用时候用类的名字代替全限定名，大小写都行-->
+        <!--使用包的形式 这个好用，现在使用这个，调用实体类的时候，写大小字母都可以调用-->
+        <package name="com.q.pojo"/>
+    </typeAliases>
+
+    <!--  环境配置-->
+    <environments default="development">
+
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${Driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--    注册-->
+    <mappers>
+        <!--                <mapper class="com.q.dao.TeacherMapper"/>-->
+        <!--                <mapper class="com.q.dao.StudentMapper"/>-->
+        <package name="com.q.dao"/>
+
+    </mappers>
+</configuration>

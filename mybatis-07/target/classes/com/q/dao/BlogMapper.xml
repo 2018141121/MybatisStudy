@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--绑定dao接口，会自动的找到sql语句-->
+<mapper namespace="com.q.dao.BlogMapper">
+    <!--添加书-->
+    <insert id="addBook" parameterType="blog">
+        insert into mybatis.blog(id, title, author, create_time, views)
+        values (#{id}, #{title}, #{author}, #{create_time}, #{views});
+    </insert>
+
+    <!--    这个方法是update-->
+    <update id="upDateTest">
+        update mybatis.blog
+        <set>
+            <if test="title !=null">
+                title =#{title},
+            </if>
+        </set>
+        where id =#{id}
+    </update>
+
+    <!--查询博客-->
+    <select id="QueryBlog" parameterType="map" resultType="com.q.pojo.Blog">
+        select *
+        from mybatis.blog where 1=1
+        <if test="title !=null">
+            and title=#{title}
+        </if>
+        <if test="author !=null">
+            and author=#{author}
+        </if>
+
+
+    </select>
+
+    <!--sql片段，相当于封装-->
+    <sql id="choose-when">
+        <choose>
+            <when test="title!=null">
+                title=#{title}
+            </when>
+            <when test="author!=null">
+                and author=#{author}
+            </when>
+            <otherwise>
+                and views=#{views}
+            </otherwise>
+        </choose>
+    </sql>
+    <!--    查询博客选择-->
+    <select id="QueryBlogChoose" resultType="com.q.pojo.Blog" parameterType="map">
+        select * from mybatis.blog
+        <where>
+            <include refid="choose-when"/>
+        </where>
+
+    </select>
+
+    <!--选择博客-->
+    <select id="selectBlog" resultType="com.q.pojo.Blog" parameterType="map">
+        select *
+        from mybatis.blog
+        <where>
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                id =#{id}
+            </foreach>
+        </where>
+
+    </select>
+
+    <!--    选择博客的名字-->
+    <select id="selectBlogByName" resultType="com.q.pojo.Blog">
+        <bind name="blogName" value="'%'+title+'%'"/>
+        select * from mybatis.blog where title like #{blogName};
+    </select>
+
+</mapper>
+
